@@ -1,10 +1,15 @@
 /* ===== Problem 1 ===== */
 
 .rocket_svg {
-    height: 200px;
-    width: auto;
-    margin-left: 300px;
-    /* Your code here */
+  height: 200px;
+  width: auto;
+  margin-left: 300px;
+  transition: transform 2s;
+  /* Your code here */
+}
+
+.rocket_svg:hover {
+  transform: rotate(250deg);
 }
 
 /* Create rocket hover animation here
@@ -13,23 +18,32 @@
 /* ===== Problem 2 ===== */
 
 .astronaut_svg {
-    height: 200px;
-    width: auto;
-    margin-left: 200px;
-    /* Your code here */
+  height: 200px;
+  width: auto;
+  margin-left: 200px;
+  transition: transform 2s;
+  /* Your code here */
 }
 
+.astronaut_svg:hover {
+  transform: translate(100px, 0px);
+}
 /* Create astronaut hover animation here
 
 /* ======= BONUS ======= */
 
 .earth_svg {
-    height: 200px;
-    width: auto;
-    margin-left: 300px;
-    /* Your animation here
+  height: 200px;
+  width: auto;
+  margin-left: 300px;
+  animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    /* Set up your keyframe animation here
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
